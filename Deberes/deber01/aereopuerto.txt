@@ -1,0 +1,6 @@
+
+1,MariscalSucre,Quito,1800123123,Comercial
+2,JoaquinOlmedo,Guayaquil,1800456456,Comercial
+3,JuanFranco,Cuenca,1800456852,Carga
+4,Cuenca,Cuenca,0228789636,privado
+5,Cotopaxi,Latacunga,02875252,militar

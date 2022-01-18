@@ -1,0 +1,37 @@
+.capitulos-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.capitulos-view{
+    display: flex;
+    align-items: center;
+}
+
+.capitulos-titulos{
+    font-weight: bold;
+    border-left: 4px solid #2a66a1;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.capitulos-view-number{
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.capitulos-view-boton{
+    font-size: 12px;
+    background-color: #227cd6;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.capitulos-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

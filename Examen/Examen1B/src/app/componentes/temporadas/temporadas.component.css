@@ -1,0 +1,38 @@
+.temporadas-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.temporadas-view{
+    display: flex;
+    align-items: center;
+}
+
+.temporadas-titulos{
+    font-weight: bold;
+    border-left: 4px solid #2a66a1;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.temporadas-view-number{
+    font-weight: bold;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.temporadas-view-boton{
+    font-size: 12px;
+    background-color: #227cd6;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+.temporadas-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

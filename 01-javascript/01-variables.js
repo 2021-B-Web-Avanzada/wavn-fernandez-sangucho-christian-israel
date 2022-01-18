@@ -28,6 +28,8 @@ console.log(typeof apellido);
 //console.log(typeof Number(value: "asd")); number
 //console.log(Number(value:"asd")); //Nan
 
+
+//Truty and falsy
 if (""){
     console.log("String vacio es verdadero");
 }else {

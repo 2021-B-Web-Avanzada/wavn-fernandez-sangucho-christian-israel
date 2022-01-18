@@ -177,3 +177,21 @@ const respuestaSome = arreglo1
 }
     )
 console.log('respuestaSome',respuestaSome);
+
+
+//[1,2,3,4,5,6,7,8]
+//REDUCE        izq -> der
+//REDUCE RIGHT  der -> izq
+//100<3 Puntos de vida
+//100 -1 -2 -3 -4 -5 -6 =
+//0 1 +2 +3 +4 +5 +6 +8 =
+const respuestaReduce = arreglo1
+    .reduce(
+        function (valorAcumulado, valorActual,indice,arreglo1){
+            return (valorAcumulado + valorActual.nota);
+        },
+        100 //Acumulador
+    )
+console.log('respuestaReduce',respuestaReduce);
+
+

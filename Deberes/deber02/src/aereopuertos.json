@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Mariscal Sucre",
+    "city": "Quito",
+    "phone": "(02) 395-4260",
+    "type": "comercial"
+  },
+  {
+    "id": 2,
+    "name": "Jose Joaquin del Olmedo",
+    "city": "Guayaquil",
+    "phone": "(04) 216-9000",
+    "type": "comercial"
+  },
+  {
+    "id": 3,
+    "name": "Mariscal La Mar",
+    "city": "Cuenca",
+    "phone": "(07) 286-7120",
+    "type": "comercial"
+  }
+]
