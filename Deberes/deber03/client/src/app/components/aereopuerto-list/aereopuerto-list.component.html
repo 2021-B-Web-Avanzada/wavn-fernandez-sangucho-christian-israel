@@ -1,1 +1,18 @@
-<p>aereopuerto-list works!</p>
+<div class="col-md-4" *ngFor="let aereopuerto of aereopuertos">
+  <div class="card text-center">
+    <div class="card-header d-flex justify-content-between align-items-lg-center">
+      {{aereopuerto.nombre_aereopuerto}}
+      <button class="btn btn-danger" (click)="deleteAereopuerto(aereopuerto.idaereopuerto)">
+        <i class="far fa-trash-alt"></i>
+      </button>
+    </div>
+    <div class="card-body">
+      <p>{{aereopuerto.ciudad_aereopuerto}}</p>
+      <p>{{aereopuerto.telefono_aereopuerto}}</p>
+      <p>{{aereopuerto.tipo_aereopuerto}}</p>
+      <a  class="btn btn-info btn-block" [routerLink]="['/aereopuertos/edit',aereopuerto.idAereopuerto]">
+        Editar
+      </a>
+    </div>
+  </div>
+</div>

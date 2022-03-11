@@ -25,7 +25,7 @@ export class AereopuertosService {
     return this.http.post(`${this.API_URI}/aereopuertos`,aereopuerto);
   }
 
-  updateAereopuerto(id: string, updateAereopuerto: Aereopuerto): Observable<Aereopuerto>{
+  updateAereopuerto(id: string | number | undefined , updateAereopuerto: Aereopuerto): Observable<Aereopuerto>{
     return this.http.put(`${this.API_URI}/aereopuertos/${id}`,updateAereopuerto);
   }
 

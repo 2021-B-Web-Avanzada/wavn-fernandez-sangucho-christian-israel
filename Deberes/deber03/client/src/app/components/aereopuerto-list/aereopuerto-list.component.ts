@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {AereopuertosService} from '../../services/aereopuertos.service'
 
 @Component({
@@ -8,11 +8,17 @@ import {AereopuertosService} from '../../services/aereopuertos.service'
 })
 export class AereopuertoListComponent implements OnInit {
 
+  @HostBinding('class')classes = 'row';
+
   aereopuertos: any =[];
 
   constructor(private  aereopuertosService: AereopuertosService) { }
 
   ngOnInit(): void {
+    this.getAereopuertos();
+  }
+
+  getAereopuertos(){
     this.aereopuertosService.getAereopuertos().subscribe(
       res => {
         this.aereopuertos = res;
@@ -21,4 +27,14 @@ export class AereopuertoListComponent implements OnInit {
     );
   }
 
-}
+  deleteAereopuerto(id:string){
+    this.aereopuertosService.deleteAereopuerto(id).subscribe(
+      res => {
+        console.log(res)
+        this.getAereopuertos();
+      },
+      err => console.log(err)
+    );
+  }
+
+  }

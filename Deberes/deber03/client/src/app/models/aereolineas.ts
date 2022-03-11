@@ -1,8 +1,8 @@
-export interface Aereopuerto {
-  id?: number;
-  nombre?: string;
+export interface Aereolinea {
+  idaereolinea?: number;
+  nombre_aereolinea?: string;
   origen?: string;
   destino?: string;
   hora?:string;
-  idAereo?: string;
+  idAereopuerto?: string;
 }

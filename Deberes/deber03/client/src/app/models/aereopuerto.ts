@@ -1,7 +1,7 @@
 export interface Aereopuerto {
-  id?: number,
-  nombre?: string;
-  ciudad?: string;
-  telefono?: string;
-  tipo?:string;
+  idaereopuerto?: number,
+  nombre_aereopuerto?: string;
+  ciudad_aereopuerto?: string;
+  telefono_aereopuerto?: string;
+  tipo_aereopuerto?:string;
 }
