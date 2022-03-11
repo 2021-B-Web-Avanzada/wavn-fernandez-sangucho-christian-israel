@@ -18,5 +18,5 @@ class ProveedorRoutes{
     }
 }
 
-const proveedorRouter = new ProveedorRoutes();
-export default proveedorRouter.router;
+const proveedorRoutes = new ProveedorRoutes();
+export default proveedorRoutes.router;
