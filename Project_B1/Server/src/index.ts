@@ -10,6 +10,7 @@ import proveedorRoutes from "./routes/proveedorRoutes";
 import productoRoutes from "./routes/productoRoutes";
 import pedidoDetalleRoutes from "./routes/pedidoDetalleRoutes";
 import pedidoCabeceraRoutes from "./routes/pedidoCabeceraRoutes";
+import marcaRoutes from "./routes/marcaRoutes";
 
 class Server{
     public app: Application;
@@ -36,6 +37,7 @@ class Server{
         this.app.use('/api/producto',productoRoutes);
         this.app.use('/api/pedidodetalle',pedidoDetalleRoutes);
         this.app.use('/api/pedidocabecera',pedidoCabeceraRoutes);
+        this.app.use('/api/marca',marcaRoutes);
     }
 
     start():void{

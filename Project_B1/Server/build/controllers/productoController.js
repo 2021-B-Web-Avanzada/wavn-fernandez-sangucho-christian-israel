@@ -34,7 +34,7 @@ class ProductoController {
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             yield database_1.default.query('INSERT INTO producto set?', [req.body]);
-            res.json({ message: 'tarjeta saved' });
+            res.json({ message: 'Producto saved' });
         });
     }
     update(req, res) {

@@ -15,7 +15,7 @@ class ProductoController{
     }
     public async create (req: Request,res:Response){
         await pool.query('INSERT INTO producto set?',[req.body])
-        res.json({message:'tarjeta saved'});
+        res.json({message:'Producto saved'});
     }
     public async update (req:Request,res:Response){
         const {id} = req.params

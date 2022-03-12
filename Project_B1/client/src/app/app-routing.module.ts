@@ -11,6 +11,11 @@ import {RutaGaleriaComponent} from "./rutas/ruta-galeria/ruta-galeria.component"
 
 const routes: Routes = [
   {
+    path:"",
+    redirectTo:"/index",
+    pathMatch:"full"
+  },
+  {
     path: 'index',
     component: RutaIndexComponent,
   },
@@ -35,11 +40,11 @@ const routes: Routes = [
     component: RutaCrearCuentaComponent,
   },
   {
-    path: 'detalle',
+    path: 'index/galeria/detalle/:id',
     component: RutaDetalleComponent,
   },
   {
-    path: 'galeria',
+    path: 'index/galeria',
     component: RutaGaleriaComponent,
   },
   {
