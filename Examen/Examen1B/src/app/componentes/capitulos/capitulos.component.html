@@ -1,0 +1,20 @@
+<div class="capitulos">
+    <div class="capitulos-row">
+        <div class="capitulos-titulos">
+            Capítulos
+        </div>
+        <div class="capitulos-view">
+            <div class="capitulos-view-number">
+                703
+            </div>
+            <div class="capitulos-view-boton">
+                SEE ALL
+            </div>            
+        </div>
+    </div>
+    <div class="capitulos-content">
+        <div *ngFor="let capitulo of capitulos">
+            <app-chapter [chapter]="capitulo"></app-chapter>
+        </div>
+    </div>
+</div>

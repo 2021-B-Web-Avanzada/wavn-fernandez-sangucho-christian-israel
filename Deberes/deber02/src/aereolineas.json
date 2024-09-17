@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "aereopuerto": "Quito",
+    "name": "Avianca",
+    "destino": "Barcelona",
+    "hora:": "14:00"
+  },
+  {
+    "id": 2,
+    "aereopuerto": "Quito",
+    "name": "Avianca",
+    "destino": "Roma",
+    "hora:": "22:00"
+  },
+  {
+    "id": 3,
+    "aereopuerto": "Guayaquil",
+    "name": "Avianca",
+    "destino": "Barcelona",
+    "hora:": "12:00"
+  },
+  {
+    "id": 4,
+    "aereopuerto": "Cuenca",
+    "name": "KLM",
+    "destino": "Murcia",
+    "hora:": "14:00"
+  }
+]

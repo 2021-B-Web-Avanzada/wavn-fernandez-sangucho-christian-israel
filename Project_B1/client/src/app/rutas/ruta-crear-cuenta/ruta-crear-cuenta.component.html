@@ -1,0 +1,78 @@
+<style>
+  .crear-container{
+    display: table;
+    position: absolute;
+    width: 666px;
+    height: 655px;
+    left: 387px;
+    top: 95px;
+
+    background: #F5F5F5;
+  }
+  .crear-cuenta{
+    display: table-cell;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    width: 500px;
+  }
+  .crear-cuenta p{
+    padding: 30px;
+    font-weight: 600;
+  }
+  .crear-cuenta mat-label{
+    color: #1D3557;
+    width: 500px;
+    align-content: center;
+    font-size: 16px;
+  }
+  .crear-cuenta mat-form-field{
+    width: 100%;
+  }
+  .btn-registro{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 15px;
+  }
+</style>
+<div class="crear-container">
+  <div class="crear-cuenta">
+    <p>Crear Cuenta</p>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Cédula</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Apellidos</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Nombres</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Constraseña</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Dirección</mat-label>
+      <input matInput placeholder="pat@example.com" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <div class="btn-registro">
+      <button type="submit" class="btn btn-primary">Registrarse</button>
+    </div>
+  </div>
+</div>

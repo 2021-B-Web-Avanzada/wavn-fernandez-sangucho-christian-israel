@@ -1,0 +1,11 @@
+<div class="col-md-4" *ngFor="let producto of productos" [routerLink]="['detalle',producto.idProducto]">
+  <div class="card text-center">
+    <div class="card-header d-flex justify-content-between align-items-lg-center">
+    </div>
+    <div class="card-body">
+      <img [src]="producto.imagen_producto" class="card-img" alt="photo_product">
+      <p>{{producto.nombre_producto}}</p>
+      <p>$ {{producto.precio_producto}}.99</p>
+    </div>
+  </div>
+</div>

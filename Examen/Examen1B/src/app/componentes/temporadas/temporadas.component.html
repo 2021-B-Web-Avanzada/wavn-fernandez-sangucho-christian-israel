@@ -1,0 +1,20 @@
+<div class="temporadas">
+    <div class="temporadas-row">
+        <div class="temporadas-titulos">
+            Temporadas
+        </div>
+        <div class="temporadas-view">
+            <div class="temporadas-view-number">
+                32
+            </div>
+            <div class="temporadas-view-boton">
+                SEE ALL
+            </div>            
+        </div>
+    </div>
+    <div class="temporadas-content">
+        <div *ngFor="let temporada of temporadas">
+            <app-season [season]="temporada"></app-season>
+        </div>
+    </div>
+</div>

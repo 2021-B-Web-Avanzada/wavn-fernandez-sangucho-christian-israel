@@ -1,0 +1,35 @@
+.background-header{
+    display: flex;
+    justify-content: center;
+    background-color: #1E73BE;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 1180px;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.search-bar{
+    background-color: rgba(216, 236, 245, 0.199);
+    border-radius: 5px;
+    color: white;
+    padding-right: 15px;
+}
+
+.search-bar input{
+    background: transparent;
+    color: white;
+    border-style: none;
+    padding: 11px 60px 11px 18px;
+    outline: none;
+}
+
+.search-bar input::placeholder{
+    color: rgba(255, 255, 255, 0.438);
+}
